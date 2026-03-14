@@ -123,7 +123,7 @@ final class EpisodeStore {
         formatter.dateFormat = "yyyy-MM"
 
         let displayFormatter = DateFormatter()
-        displayFormatter.dateFormat = "MMMM yyyy"
+        displayFormatter.dateFormat = "MMM yy"
 
         var grouped: [String: (display: String, count: Int, date: Date)] = [:]
         for episode in episodes {

@@ -65,7 +65,7 @@
 "stats.total" = "Total";
 "stats.avg_stress" = "Avg stress";
 "stats.with_hallucination" = "With hallucination";
-"stats.episodes_per_month" = "Episodes per month (last 12)";
+"stats.episodes_per_month" = "Episodes per month";
 "stats.hallucination_types" = "Hallucination types";
 "stats.triggers" = "Triggers";
 "stats.stress_over_time" = "Stress over time";
@@ -96,3 +96,17 @@
 
 /* Menu bar */
 "menubar.stress" = "Stress: %d";
+"pdf.filename" = "sleep-paralysis-report";
+
+/* Stats period */
+"stats.period" = "Period";
+"stats.period.3m" = "3 months";
+"stats.period.6m" = "6 months";
+"stats.period.1y" = "1 year";
+"stats.period.all" = "All";
+"stats.period.from" = "From";
+"stats.period.to" = "To";
+"trigger.anxiety" = "Anxiety";
+"trigger.depression" = "Depression";
+"pdf.episodes_count" = "episode(s)";
+"pdf.export" = "Export";

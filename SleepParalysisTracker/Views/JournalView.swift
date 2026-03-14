@@ -3,6 +3,7 @@ import SwiftUI
 struct JournalView: View {
     var store: EpisodeStore
     @State private var showingAddSheet = false
+    @State private var showingExportSheet = false
     @State private var editingEpisode: Episode?
     @State private var filterHallucination: Bool?
     @State private var filterPosition: SleepPosition?
@@ -95,7 +96,7 @@ struct JournalView: View {
             }
             ToolbarItem {
                 Button {
-                    PDFExporter.export(episodes: store.episodes)
+                    showingExportSheet = true
                 } label: {
                     Label("journal.export_pdf", systemImage: "square.and.arrow.up")
                 }
@@ -152,6 +153,9 @@ struct JournalView: View {
         .sheet(item: $editingEpisode) { episode in
             EpisodeFormView(store: store, editingEpisode: episode)
         }
+        .sheet(isPresented: $showingExportSheet) {
+            PDFExportView(episodes: store.episodes)
+        }
     }
 }
 
@@ -172,7 +176,7 @@ struct EpisodeRow: View {
                     .fill(stressColor.opacity(0.2))
                     .frame(width: 40, height: 40)
                 Text("\(episode.stressLevel)")
-                    .font(.system(.body, design: .rounded, weight: .bold))
+                    .font(.system(.title, design: .rounded, weight: .bold))
                     .foregroundStyle(stressColor)
             }
 

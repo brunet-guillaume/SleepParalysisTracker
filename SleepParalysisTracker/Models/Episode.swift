@@ -30,6 +30,16 @@ enum HallucinationType: String, Codable, CaseIterable, Identifiable {
         }
     }
 
+    var nsColor: NSColor {
+        switch self {
+        case .visual: return NSColor(red: 0.0, green: 0.48, blue: 1.0, alpha: 1)
+        case .auditory: return NSColor(red: 0.2, green: 0.7, blue: 0.2, alpha: 1)
+        case .tactile: return NSColor(red: 1.0, green: 0.6, blue: 0.0, alpha: 1)
+        case .presence: return NSColor(red: 0.6, green: 0.2, blue: 0.8, alpha: 1)
+        case .other: return NSColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1)
+        }
+    }
+
     var icon: String {
         switch self {
         case .visual: return "eye"
@@ -70,6 +80,8 @@ enum SleepPosition: String, Codable, CaseIterable, Identifiable {
 
 enum Trigger: String, Codable, CaseIterable, Identifiable {
     case stress
+    case anxiety
+    case depression
     case sleepDeprivation
     case jetlag
     case lateScreen
@@ -84,6 +96,8 @@ enum Trigger: String, Codable, CaseIterable, Identifiable {
     var label: String {
         switch self {
         case .stress: return String(localized: "trigger.stress")
+        case .anxiety: return String(localized: "trigger.anxiety")
+        case .depression: return String(localized: "trigger.depression")
         case .sleepDeprivation: return String(localized: "trigger.sleep_deprivation")
         case .jetlag: return String(localized: "trigger.jetlag")
         case .lateScreen: return String(localized: "trigger.late_screen")
@@ -98,6 +112,8 @@ enum Trigger: String, Codable, CaseIterable, Identifiable {
     var icon: String {
         switch self {
         case .stress: return "brain.head.profile"
+        case .anxiety: return "exclamationmark.triangle"
+        case .depression: return "cloud.rain"
         case .sleepDeprivation: return "powersleep"
         case .jetlag: return "airplane"
         case .lateScreen: return "iphone"
@@ -112,6 +128,8 @@ enum Trigger: String, Codable, CaseIterable, Identifiable {
     var color: Color {
         switch self {
         case .stress: return .red
+        case .anxiety: return .pink
+        case .depression: return .cyan
         case .sleepDeprivation: return .orange
         case .jetlag: return .blue
         case .lateScreen: return .indigo
@@ -120,6 +138,22 @@ enum Trigger: String, Codable, CaseIterable, Identifiable {
         case .nap: return .teal
         case .irregularSchedule: return .yellow
         case .other: return .gray
+        }
+    }
+
+    var nsColor: NSColor {
+        switch self {
+        case .stress: return NSColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 1)
+        case .anxiety: return NSColor(red: 1.0, green: 0.4, blue: 0.6, alpha: 1)
+        case .depression: return NSColor(red: 0.3, green: 0.7, blue: 0.85, alpha: 1)
+        case .sleepDeprivation: return NSColor(red: 1.0, green: 0.6, blue: 0.0, alpha: 1)
+        case .jetlag: return NSColor(red: 0.0, green: 0.48, blue: 1.0, alpha: 1)
+        case .lateScreen: return NSColor(red: 0.35, green: 0.2, blue: 0.7, alpha: 1)
+        case .alcohol: return NSColor(red: 0.6, green: 0.2, blue: 0.8, alpha: 1)
+        case .caffeine: return NSColor(red: 0.55, green: 0.35, blue: 0.17, alpha: 1)
+        case .nap: return NSColor(red: 0.2, green: 0.65, blue: 0.65, alpha: 1)
+        case .irregularSchedule: return NSColor(red: 0.8, green: 0.7, blue: 0.0, alpha: 1)
+        case .other: return NSColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1)
         }
     }
 }

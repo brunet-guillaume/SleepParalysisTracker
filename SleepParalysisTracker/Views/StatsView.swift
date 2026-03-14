@@ -1,8 +1,55 @@
 import SwiftUI
 import Charts
 
+struct MonthOption: Hashable {
+    let date: Date
+    let label: String
+}
+
 struct StatsView: View {
     var store: EpisodeStore
+    @State private var startMonth: Date = Date()
+    @State private var endMonth: Date = Date()
+    @State private var initialized = false
+
+    private var allMonths: [MonthOption] {
+        let calendar = Calendar.current
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+
+        guard let oldest = store.episodes.min(by: { $0.date < $1.date })?.date else { return [] }
+
+        let startComponents = calendar.dateComponents([.year, .month], from: oldest)
+        var current = calendar.date(from: startComponents)!
+        let now = Date()
+        var months: [MonthOption] = []
+
+        while current <= now {
+            months.append(MonthOption(date: current, label: formatter.string(from: current).capitalized))
+            current = calendar.date(byAdding: .month, value: 1, to: current)!
+        }
+        return months.reversed()
+    }
+
+    private var startMonthOptions: [MonthOption] {
+        allMonths.filter { $0.date <= endMonth }
+    }
+
+    private var endMonthOptions: [MonthOption] {
+        allMonths.filter { $0.date >= startMonth }
+    }
+
+    private var filteredEpisodes: [Episode] {
+        let calendar = Calendar.current
+        let endOfMonth = calendar.date(byAdding: DateComponents(month: 1, day: -1), to: endMonth)!
+        return store.episodes.filter { $0.date >= startMonth && $0.date <= endOfMonth }
+    }
+
+    private var filteredStore: EpisodeStore {
+        let s = EpisodeStore()
+        s.episodes = filteredEpisodes
+        return s
+    }
 
     var body: some View {
         if store.episodes.isEmpty {
@@ -14,28 +61,58 @@ struct StatsView: View {
         } else {
             ScrollView {
                 VStack(spacing: 20) {
+                    // Period selector
+                    HStack {
+                        Picker("stats.period.from", selection: $startMonth) {
+                            ForEach(startMonthOptions, id: \.self) { month in
+                                Text(month.label).tag(month.date)
+                            }
+                        }
+                        Picker("stats.period.to", selection: $endMonth) {
+                            ForEach(endMonthOptions, id: \.self) { month in
+                                Text(month.label).tag(month.date)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        guard !initialized, let last = allMonths.first else { return }
+                        let calendar = Calendar.current
+                        let sixMonthsAgo = calendar.date(byAdding: .month, value: -5, to: last.date)!
+                        let sixMonthsComponents = calendar.dateComponents([.year, .month], from: sixMonthsAgo)
+                        let sixMonthsStart = calendar.date(from: sixMonthsComponents)!
+                        // Find the closest available month
+                        startMonth = allMonths.last { $0.date >= sixMonthsStart }?.date ?? allMonths.last!.date
+                        endMonth = last.date
+                        initialized = true
+                    }
+
                     // Summary cards
+                    let episodes = filteredEpisodes
+                    let totalCount = episodes.count
+                    let avgStress = episodes.isEmpty ? 0.0 : Double(episodes.map(\.stressLevel).reduce(0, +)) / Double(totalCount)
+                    let hallPercentage = episodes.isEmpty ? 0.0 : Double(episodes.filter(\.hasHallucination).count) / Double(totalCount) * 100
+
                     HStack(spacing: 16) {
                         StatCard(
                             title: String(localized: "stats.total"),
-                            value: "\(store.totalCount)",
+                            value: "\(totalCount)",
                             icon: "moon.zzz.fill",
                             color: .blue
                         )
                         StatCard(
                             title: String(localized: "stats.avg_stress"),
-                            value: String(format: "%.1f", store.averageStress),
+                            value: String(format: "%.1f", avgStress),
                             icon: "brain.head.profile",
-                            color: stressColor(store.averageStress)
+                            color: stressColor(avgStress)
                         )
                         StatCard(
                             title: String(localized: "stats.with_hallucination"),
-                            value: String(format: "%.0f%%", store.hallucinationPercentage),
+                            value: String(format: "%.0f%%", hallPercentage),
                             icon: "eye.trianglebadge.exclamationmark",
                             color: .purple
                         )
                     }
-                    
+
                     FlowLayout(spacing: 16) {
                         episodesPerMonthChart
                             .frame(minWidth: 250, minHeight: 300)
@@ -43,7 +120,7 @@ struct StatsView: View {
                         hallucinationTypeChart
                             .frame(minWidth: 250, minHeight: 300)
 
-                        CalendarHeatmapView(episodes: store.episodes)
+                        CalendarHeatmapView(episodes: filteredEpisodes)
                             .frame(minWidth: 250, minHeight: 300)
 
                         triggersChart
@@ -60,7 +137,7 @@ struct StatsView: View {
 
     @ViewBuilder
     private var episodesPerMonthChart: some View {
-        let monthlyData = store.episodesByMonth().suffix(12)
+        let monthlyData = filteredStore.episodesByMonth()
         if !monthlyData.isEmpty {
             GroupBox("stats.episodes_per_month") {
                 Chart(monthlyData, id: \.month) { item in
@@ -71,6 +148,11 @@ struct StatsView: View {
                     .foregroundStyle(.blue.gradient)
                     .cornerRadius(4)
                 }
+                .chartXAxis {
+                    AxisMarks { _ in
+                        AxisValueLabel(orientation: .vertical)
+                    }
+                }
                 .padding(16)
                 .frame(maxHeight: .infinity)
             }
@@ -80,7 +162,7 @@ struct StatsView: View {
 
     @ViewBuilder
     private var hallucinationTypeChart: some View {
-        let typeData = store.hallucinationTypeBreakdown()
+        let typeData = filteredStore.hallucinationTypeBreakdown()
         if !typeData.isEmpty {
             GroupBox("stats.hallucination_types") {
                 Chart(typeData, id: \.type) { item in
@@ -106,7 +188,7 @@ struct StatsView: View {
 
     @ViewBuilder
     private var triggersChart: some View {
-        let triggerData = store.triggerBreakdown()
+        let triggerData = filteredStore.triggerBreakdown()
         if !triggerData.isEmpty {
             GroupBox("stats.triggers") {
                 Chart(triggerData, id: \.trigger) { item in
@@ -132,9 +214,9 @@ struct StatsView: View {
 
     @ViewBuilder
     private var stressOverTimeChart: some View {
-        if store.episodes.count > 1 {
+        let dailyStress = filteredStore.averageStressByDay()
+        if dailyStress.count > 1 {
             GroupBox("stats.stress_over_time") {
-                let dailyStress = store.averageStressByDay()
                 Chart(dailyStress, id: \.date) { item in
                     LineMark(
                         x: .value(String(localized: "chart.date"), item.date),

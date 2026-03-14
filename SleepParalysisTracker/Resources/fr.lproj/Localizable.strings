@@ -65,7 +65,7 @@
 "stats.total" = "Total";
 "stats.avg_stress" = "Stress moyen";
 "stats.with_hallucination" = "Avec hallucination";
-"stats.episodes_per_month" = "Épisodes par mois (12 derniers)";
+"stats.episodes_per_month" = "Épisodes par mois";
 "stats.hallucination_types" = "Types d'hallucination";
 "stats.triggers" = "Déclencheurs";
 "stats.stress_over_time" = "Évolution du stress";
@@ -96,3 +96,17 @@
 
 /* Menu bar */
 "menubar.stress" = "Stress: %d";
+"pdf.filename" = "paralysies-du-sommeil";
+
+/* Stats period */
+"stats.period" = "Période";
+"stats.period.3m" = "3 mois";
+"stats.period.6m" = "6 mois";
+"stats.period.1y" = "1 an";
+"stats.period.all" = "Tout";
+"stats.period.from" = "Du";
+"stats.period.to" = "Au";
+"trigger.anxiety" = "Anxiété";
+"trigger.depression" = "Dépression";
+"pdf.episodes_count" = "épisode(s)";
+"pdf.export" = "Exporter";

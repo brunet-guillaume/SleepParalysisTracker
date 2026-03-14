@@ -11,29 +11,16 @@
 		224971660ACA2C179FE369DF /* CalendarHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274788278C8F015DEFFC2BB8 /* CalendarHeatmapView.swift */; };
 		6419B219ABB23BB5E30A7BCF /* EpisodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CAB640825E52E6DF6C97B /* EpisodeStore.swift */; };
 		6A8AF4AF6204AA26175312B7 /* PDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266085BDAF22399FA18DA6C /* PDFExporter.swift */; };
+		7CE9491F253F18068D47C930 /* PDFExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC80332EC1188D16B1CFF94 /* PDFExportView.swift */; };
 		8D830DBC8DF956F366172FCB /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FA244182E9B57762B9D38 /* MenuBarView.swift */; };
 		9BA6671A4715FE3AEBB574E3 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111AD0FBCC216A143E5C8960 /* FlowLayout.swift */; };
 		A6A346FC6933AF76B0FADD65 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E853EAF4E7026E4F40588FE /* JournalView.swift */; };
 		B653607004802CDFEE40E07C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1AB27B7B100EC08C261EF /* StatsView.swift */; };
-		D071C1292F655034004BA7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D071C1282F655034004BA7A7 /* Assets.xcassets */; };
 		DA084983169D7942351076D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CD3D87D12FDD718BF85DA /* Localizable.strings */; };
 		DFBE07ECF7CD0483065DE16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34321313B87F96DE8F838AE /* ContentView.swift */; };
 		F6093B53866972BCC1AB5AC7 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70702216659F99961B1D06AF /* Episode.swift */; };
 		F8C6DE1B25FD6B6FF5F8A961 /* SleepParalysisTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D0E2FA562F653CAA00A5818C /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0266085BDAF22399FA18DA6C /* PDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExporter.swift; sourceTree = "<group>"; };
@@ -47,13 +34,11 @@
 		869CAB640825E52E6DF6C97B /* EpisodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeStore.swift; sourceTree = "<group>"; };
 		8894E8CB539A7D11216F4FBB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepParalysisTrackerApp.swift; sourceTree = "<group>"; };
+		9CC80332EC1188D16B1CFF94 /* PDFExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportView.swift; sourceTree = "<group>"; };
 		B34321313B87F96DE8F838AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D0024F1E2F6547CF00776477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D071C1282F655034004BA7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0E2FA452F653CA900A5818C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		D0E2FA472F653CA900A5818C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D30D04A1C9986FA334C9F156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D990D9E8F19844ACB3567977 /* EpisodeFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeFormView.swift; sourceTree = "<group>"; };
+		E698D9F48F878F4C2FAF680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -68,9 +53,7 @@
 		41FF06F4122F72537738F5AE = {
 			isa = PBXGroup;
 			children = (
-				D071C1282F655034004BA7A7 /* Assets.xcassets */,
 				D44FB064B67F44F886E81CF2 /* SleepParalysisTracker */,
-				D0E2FA442F653CA900A5818C /* Frameworks */,
 				3F5938D2886A4E1364C9A005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,15 +84,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D0E2FA442F653CA900A5818C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D0E2FA452F653CA900A5818C /* WidgetKit.framework */,
-				D0E2FA472F653CA900A5818C /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D194DB12032909A766616AC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +93,7 @@
 				111AD0FBCC216A143E5C8960 /* FlowLayout.swift */,
 				0E853EAF4E7026E4F40588FE /* JournalView.swift */,
 				449FA244182E9B57762B9D38 /* MenuBarView.swift */,
+				9CC80332EC1188D16B1CFF94 /* PDFExportView.swift */,
 				72D1AB27B7B100EC08C261EF /* StatsView.swift */,
 			);
 			path = Views;
@@ -127,7 +102,7 @@
 		D44FB064B67F44F886E81CF2 /* SleepParalysisTracker */ = {
 			isa = PBXGroup;
 			children = (
-				D0024F1E2F6547CF00776477 /* Info.plist */,
+				E698D9F48F878F4C2FAF680E /* Info.plist */,
 				A7A594284609CC15735AE9F5 /* App */,
 				C09C46E603F5F673F2AD7A5D /* Models */,
 				CA0DFC1FB6FA62AE52CAFAAE /* Resources */,
@@ -145,7 +120,6 @@
 			buildPhases = (
 				977193DE8061D3F01969709A /* Sources */,
 				4FA8EA74FD8D09B7C971679D /* Resources */,
-				D0E2FA562F653CAA00A5818C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -165,7 +139,6 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 			};
 			buildConfigurationList = 2484A716042426715E992EA9 /* Build configuration list for PBXProject "SleepParalysisTracker" */;
@@ -193,7 +166,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D071C1292F655034004BA7A7 /* Assets.xcassets in Resources */,
 				DA084983169D7942351076D1 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +185,7 @@
 				9BA6671A4715FE3AEBB574E3 /* FlowLayout.swift in Sources */,
 				A6A346FC6933AF76B0FADD65 /* JournalView.swift in Sources */,
 				8D830DBC8DF956F366172FCB /* MenuBarView.swift in Sources */,
+				7CE9491F253F18068D47C930 /* PDFExportView.swift in Sources */,
 				6A8AF4AF6204AA26175312B7 /* PDFExporter.swift in Sources */,
 				F8C6DE1B25FD6B6FF5F8A961 /* SleepParalysisTrackerApp.swift in Sources */,
 				B653607004802CDFEE40E07C /* StatsView.swift in Sources */,
@@ -271,7 +244,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4Q64H7Q3R3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -339,7 +311,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 4Q64H7Q3R3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -367,40 +338,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = SleepParalysisTracker.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = GNC5X4M8UT;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
-				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
-				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
-				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
-				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
-				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepParalysisTracker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Paralysis Tracker";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uotiug.SleepParalysisTracker;
 				PRODUCT_NAME = "Sleep Paralysis Tracker";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
-				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
-				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
-				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
-				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
-				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -409,40 +357,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = SleepParalysisTracker.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = GNC5X4M8UT;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
-				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
-				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
-				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
-				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
-				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepParalysisTracker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Paralysis Tracker";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uotiug.SleepParalysisTracker;
 				PRODUCT_NAME = "Sleep Paralysis Tracker";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
-				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
-				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
-				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
-				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
-				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
