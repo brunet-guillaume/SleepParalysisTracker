@@ -104,8 +104,8 @@
 "stats.period.6m" = "6 mois";
 "stats.period.1y" = "1 an";
 "stats.period.all" = "Tout";
-"stats.period.from" = "Du";
-"stats.period.to" = "Au";
+"stats.period.from" = "De";
+"stats.period.to" = "à";
 "trigger.anxiety" = "Anxiété";
 "trigger.depression" = "Dépression";
 "pdf.episodes_count" = "épisode(s)";

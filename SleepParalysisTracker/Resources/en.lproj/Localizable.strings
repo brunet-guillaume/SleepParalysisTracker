@@ -105,7 +105,7 @@
 "stats.period.1y" = "1 year";
 "stats.period.all" = "All";
 "stats.period.from" = "From";
-"stats.period.to" = "To";
+"stats.period.to" = "to";
 "trigger.anxiety" = "Anxiety";
 "trigger.depression" = "Depression";
 "pdf.episodes_count" = "episode(s)";
