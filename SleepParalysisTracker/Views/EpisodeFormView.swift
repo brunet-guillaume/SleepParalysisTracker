@@ -95,7 +95,8 @@ struct EpisodeFormView: View {
             }
         }
         .formStyle(.grouped)
-        .frame(minWidth: 400, minHeight: 550)
+        .scrollIndicators(.automatic)
+        .frame(minWidth: 400, idealHeight: 600, maxHeight: 700)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
                 Button("form.cancel") { dismiss() }

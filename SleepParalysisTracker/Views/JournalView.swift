@@ -26,7 +26,6 @@ struct JournalView: View {
     private func groupedFiltered() -> [(month: String, episodes: [Episode])] {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM yyyy"
-        formatter.locale = Locale(identifier: "fr_FR")
 
         var grouped: [String: (date: Date, episodes: [Episode])] = [:]
         for episode in filteredEpisodes {
@@ -163,7 +162,6 @@ struct EpisodeRow: View {
         let f = DateFormatter()
         f.dateStyle = .medium
         f.timeStyle = .short
-        f.locale = Locale(identifier: "fr_FR")
         return f
     }
 

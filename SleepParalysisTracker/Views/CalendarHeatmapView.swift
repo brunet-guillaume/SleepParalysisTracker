@@ -21,7 +21,6 @@ struct CalendarHeatmapView: View {
     private var monthTitle: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM yyyy"
-        formatter.locale = Locale(identifier: "fr_FR")
         return formatter.string(from: displayedMonth).capitalized
     }
 

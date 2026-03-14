@@ -121,11 +121,9 @@ final class EpisodeStore {
     func episodesByMonth() -> [(month: String, count: Int)] {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM"
-        formatter.locale = Locale(identifier: "fr_FR")
 
         let displayFormatter = DateFormatter()
         displayFormatter.dateFormat = "MMMM yyyy"
-        displayFormatter.locale = Locale(identifier: "fr_FR")
 
         var grouped: [String: (display: String, count: Int, date: Date)] = [:]
         for episode in episodes {
@@ -144,7 +142,6 @@ final class EpisodeStore {
     func groupedByMonth() -> [(month: String, episodes: [Episode])] {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM yyyy"
-        formatter.locale = Locale(identifier: "fr_FR")
 
         var grouped: [String: (date: Date, episodes: [Episode])] = [:]
         for episode in episodes {
