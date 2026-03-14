@@ -3,9 +3,9 @@ import ServiceManagement
 
 struct MenuBarView: View {
     @Environment(EpisodeStore.self) private var store
-    @State private var showingAdd = false
     @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
     var openWindow: () -> Void
+    var openAddForm: () -> Void
 
     var body: some View {
         VStack(spacing: 12) {
@@ -73,7 +73,8 @@ struct MenuBarView: View {
 
             // Actions
             Button {
-                showingAdd = true
+                NSApp.keyWindow?.close()
+                openAddForm()
             } label: {
                 Label("menubar.new_episode", systemImage: "plus.circle.fill")
                     .frame(maxWidth: .infinity)
@@ -110,9 +111,6 @@ struct MenuBarView: View {
         }
         .padding()
         .frame(width: 300)
-        .sheet(isPresented: $showingAdd) {
-            EpisodeFormView(store: store)
-        }
     }
 
     private var monthCount: Int {
@@ -145,6 +143,6 @@ struct MenuBarView: View {
         Episode(date: .now.addingTimeInterval(-3600), stressLevel: 7, hasHallucination: true, hallucinationTypes: [.visual]),
         Episode(date: .now.addingTimeInterval(-86400 * 3), stressLevel: 5, hasHallucination: false),
     ]
-    return MenuBarView(openWindow: {})
+    return MenuBarView(openWindow: {}, openAddForm: {})
         .environment(store)
 }

@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14F771EEA67B960E707D0E1B /* EpisodeFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D990D9E8F19844ACB3567977 /* EpisodeFormView.swift */; };
+		224971660ACA2C179FE369DF /* CalendarHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274788278C8F015DEFFC2BB8 /* CalendarHeatmapView.swift */; };
+		6419B219ABB23BB5E30A7BCF /* EpisodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CAB640825E52E6DF6C97B /* EpisodeStore.swift */; };
+		6A8AF4AF6204AA26175312B7 /* PDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266085BDAF22399FA18DA6C /* PDFExporter.swift */; };
+		8D830DBC8DF956F366172FCB /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FA244182E9B57762B9D38 /* MenuBarView.swift */; };
+		9BA6671A4715FE3AEBB574E3 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111AD0FBCC216A143E5C8960 /* FlowLayout.swift */; };
+		A6A346FC6933AF76B0FADD65 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E853EAF4E7026E4F40588FE /* JournalView.swift */; };
+		B653607004802CDFEE40E07C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1AB27B7B100EC08C261EF /* StatsView.swift */; };
+		D071C1292F655034004BA7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D071C1282F655034004BA7A7 /* Assets.xcassets */; };
+		DA084983169D7942351076D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CD3D87D12FDD718BF85DA /* Localizable.strings */; };
+		DFBE07ECF7CD0483065DE16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34321313B87F96DE8F838AE /* ContentView.swift */; };
+		F6093B53866972BCC1AB5AC7 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70702216659F99961B1D06AF /* Episode.swift */; };
+		F8C6DE1B25FD6B6FF5F8A961 /* SleepParalysisTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0E2FA562F653CAA00A5818C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0266085BDAF22399FA18DA6C /* PDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExporter.swift; sourceTree = "<group>"; };
+		09590CA41A163410C8748CA3 /* Sleep Paralysis Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Paralysis Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E853EAF4E7026E4F40588FE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		111AD0FBCC216A143E5C8960 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		274788278C8F015DEFFC2BB8 /* CalendarHeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeatmapView.swift; sourceTree = "<group>"; };
+		449FA244182E9B57762B9D38 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		70702216659F99961B1D06AF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		72D1AB27B7B100EC08C261EF /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		869CAB640825E52E6DF6C97B /* EpisodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeStore.swift; sourceTree = "<group>"; };
+		8894E8CB539A7D11216F4FBB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepParalysisTrackerApp.swift; sourceTree = "<group>"; };
+		B34321313B87F96DE8F838AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0024F1E2F6547CF00776477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D071C1282F655034004BA7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0E2FA452F653CA900A5818C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D0E2FA472F653CA900A5818C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D30D04A1C9986FA334C9F156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D990D9E8F19844ACB3567977 /* EpisodeFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeFormView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3F5938D2886A4E1364C9A005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09590CA41A163410C8748CA3 /* Sleep Paralysis Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41FF06F4122F72537738F5AE = {
+			isa = PBXGroup;
+			children = (
+				D071C1282F655034004BA7A7 /* Assets.xcassets */,
+				D44FB064B67F44F886E81CF2 /* SleepParalysisTracker */,
+				D0E2FA442F653CA900A5818C /* Frameworks */,
+				3F5938D2886A4E1364C9A005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A594284609CC15735AE9F5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C09C46E603F5F673F2AD7A5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70702216659F99961B1D06AF /* Episode.swift */,
+				869CAB640825E52E6DF6C97B /* EpisodeStore.swift */,
+				0266085BDAF22399FA18DA6C /* PDFExporter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA0DFC1FB6FA62AE52CAFAAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E2CD3D87D12FDD718BF85DA /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0E2FA442F653CA900A5818C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2FA452F653CA900A5818C /* WidgetKit.framework */,
+				D0E2FA472F653CA900A5818C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D194DB12032909A766616AC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				274788278C8F015DEFFC2BB8 /* CalendarHeatmapView.swift */,
+				B34321313B87F96DE8F838AE /* ContentView.swift */,
+				D990D9E8F19844ACB3567977 /* EpisodeFormView.swift */,
+				111AD0FBCC216A143E5C8960 /* FlowLayout.swift */,
+				0E853EAF4E7026E4F40588FE /* JournalView.swift */,
+				449FA244182E9B57762B9D38 /* MenuBarView.swift */,
+				72D1AB27B7B100EC08C261EF /* StatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D44FB064B67F44F886E81CF2 /* SleepParalysisTracker */ = {
+			isa = PBXGroup;
+			children = (
+				D0024F1E2F6547CF00776477 /* Info.plist */,
+				A7A594284609CC15735AE9F5 /* App */,
+				C09C46E603F5F673F2AD7A5D /* Models */,
+				CA0DFC1FB6FA62AE52CAFAAE /* Resources */,
+				D194DB12032909A766616AC4 /* Views */,
+			);
+			path = SleepParalysisTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41A308BDA6A5C503FC580861 /* SleepParalysisTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAD1A2BF0EC817A0D524A9F /* Build configuration list for PBXNativeTarget "SleepParalysisTracker" */;
+			buildPhases = (
+				977193DE8061D3F01969709A /* Sources */,
+				4FA8EA74FD8D09B7C971679D /* Resources */,
+				D0E2FA562F653CAA00A5818C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepParalysisTracker;
+			packageProductDependencies = (
+			);
+			productName = SleepParalysisTracker;
+			productReference = 09590CA41A163410C8748CA3 /* Sleep Paralysis Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		620CC4EA8CF14081226A73F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = 2484A716042426715E992EA9 /* Build configuration list for PBXProject "SleepParalysisTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				fr,
+			);
+			mainGroup = 41FF06F4122F72537738F5AE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F5938D2886A4E1364C9A005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41A308BDA6A5C503FC580861 /* SleepParalysisTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA8EA74FD8D09B7C971679D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D071C1292F655034004BA7A7 /* Assets.xcassets in Resources */,
+				DA084983169D7942351076D1 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		977193DE8061D3F01969709A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224971660ACA2C179FE369DF /* CalendarHeatmapView.swift in Sources */,
+				DFBE07ECF7CD0483065DE16D /* ContentView.swift in Sources */,
+				F6093B53866972BCC1AB5AC7 /* Episode.swift in Sources */,
+				14F771EEA67B960E707D0E1B /* EpisodeFormView.swift in Sources */,
+				6419B219ABB23BB5E30A7BCF /* EpisodeStore.swift in Sources */,
+				9BA6671A4715FE3AEBB574E3 /* FlowLayout.swift in Sources */,
+				A6A346FC6933AF76B0FADD65 /* JournalView.swift in Sources */,
+				8D830DBC8DF956F366172FCB /* MenuBarView.swift in Sources */,
+				6A8AF4AF6204AA26175312B7 /* PDFExporter.swift in Sources */,
+				F8C6DE1B25FD6B6FF5F8A961 /* SleepParalysisTrackerApp.swift in Sources */,
+				B653607004802CDFEE40E07C /* StatsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E2CD3D87D12FDD718BF85DA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30D04A1C9986FA334C9F156 /* en */,
+				8894E8CB539A7D11216F4FBB /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31E7B7F5034BFD1347A40A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4Q64H7Q3R3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		BE1D5E61F551112BC816D845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4Q64H7Q3R3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C2806178D5A99A7941CD4B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = SleepParalysisTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepParalysisTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uotiug.SleepParalysisTracker;
+				PRODUCT_NAME = "Sleep Paralysis Tracker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E68E6B090E82EE41000E2886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = SleepParalysisTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepParalysisTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uotiug.SleepParalysisTracker;
+				PRODUCT_NAME = "Sleep Paralysis Tracker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2484A716042426715E992EA9 /* Build configuration list for PBXProject "SleepParalysisTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E7B7F5034BFD1347A40A68 /* Debug */,
+				BE1D5E61F551112BC816D845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2EAD1A2BF0EC817A0D524A9F /* Build configuration list for PBXNativeTarget "SleepParalysisTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2806178D5A99A7941CD4B3F /* Debug */,
+				E68E6B090E82EE41000E2886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 620CC4EA8CF14081226A73F0 /* Project object */;
+}
