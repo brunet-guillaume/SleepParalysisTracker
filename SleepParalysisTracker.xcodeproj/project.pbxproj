@@ -16,6 +16,7 @@
 		9BA6671A4715FE3AEBB574E3 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111AD0FBCC216A143E5C8960 /* FlowLayout.swift */; };
 		A6A346FC6933AF76B0FADD65 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E853EAF4E7026E4F40588FE /* JournalView.swift */; };
 		B653607004802CDFEE40E07C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1AB27B7B100EC08C261EF /* StatsView.swift */; };
+		D06022AD2F65971A006EAB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06022AC2F65971A006EAB9A /* Assets.xcassets */; };
 		DA084983169D7942351076D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CD3D87D12FDD718BF85DA /* Localizable.strings */; };
 		DFBE07ECF7CD0483065DE16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34321313B87F96DE8F838AE /* ContentView.swift */; };
 		F6093B53866972BCC1AB5AC7 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70702216659F99961B1D06AF /* Episode.swift */; };
@@ -36,6 +37,7 @@
 		8C3A737F34A0383956C50975 /* SleepParalysisTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepParalysisTrackerApp.swift; sourceTree = "<group>"; };
 		9CC80332EC1188D16B1CFF94 /* PDFExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportView.swift; sourceTree = "<group>"; };
 		B34321313B87F96DE8F838AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D06022AC2F65971A006EAB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30D04A1C9986FA334C9F156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D990D9E8F19844ACB3567977 /* EpisodeFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeFormView.swift; sourceTree = "<group>"; };
 		E698D9F48F878F4C2FAF680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		41FF06F4122F72537738F5AE = {
 			isa = PBXGroup;
 			children = (
+				D06022AC2F65971A006EAB9A /* Assets.xcassets */,
 				D44FB064B67F44F886E81CF2 /* SleepParalysisTracker */,
 				3F5938D2886A4E1364C9A005 /* Products */,
 			);
@@ -166,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06022AD2F65971A006EAB9A /* Assets.xcassets in Resources */,
 				DA084983169D7942351076D1 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +347,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GNC5X4M8UT;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -382,6 +387,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GNC5X4M8UT;
 				ENABLE_HARDENED_RUNTIME = YES;
