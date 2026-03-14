@@ -18,6 +18,8 @@
 
 **App overview:**
 
+https://github.com/user-attachments/assets/74307659-63fc-4a40-aa12-bb5092e46727
+
 **Menu bar:**
 
 <p align="center">
