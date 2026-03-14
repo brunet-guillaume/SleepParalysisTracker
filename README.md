@@ -26,6 +26,8 @@ https://github.com/user-attachments/assets/1ddce695-ca47-4034-aa1f-f8937be90fb1
   <img src="assets/preview_menu_bar.png" width="350" alt="Menu Bar Preview">
 </p>
 
+**PDF export:** [sample report](assets/sleep-paralysis-report.pdf)
+
 ## Features
 
 ### Journal
