@@ -1,0 +1,98 @@
+/* Tabs */
+"tab.journal" = "Journal";
+"tab.stats" = "Statistics";
+
+/* Journal */
+"journal.empty.title" = "No episodes";
+"journal.empty.description" = "Tap + to log your first episode.";
+"journal.add" = "Add";
+"journal.edit" = "Edit";
+"journal.delete" = "Delete";
+"journal.no_hallucination" = "No hallucination";
+"journal.filter" = "Filter";
+"journal.filter.with_hallucination" = "With hallucination";
+"journal.filter.without_hallucination" = "Without hallucination";
+"journal.filter.position" = "Position";
+"journal.filter.trigger" = "Trigger";
+"journal.filter.reset" = "Reset filters";
+"journal.filter.no_results" = "No results";
+"journal.filter.no_results_description" = "No episodes match the filters.";
+
+/* Form */
+"form.when" = "When?";
+"form.date" = "Date and time";
+"form.stress" = "Stress level";
+"form.stress.low" = "Low";
+"form.stress.moderate" = "Moderate";
+"form.stress.high" = "High";
+"form.stress.very_high" = "Very high";
+"form.position" = "Sleep position";
+"form.hallucination" = "Hallucination";
+"form.hallucination.present" = "Hallucination present";
+"form.triggers" = "Possible triggers";
+"form.notes" = "Notes";
+"form.cancel" = "Cancel";
+"form.save" = "Save";
+"form.update" = "Update";
+
+/* Sleep positions */
+"position.back" = "On back";
+"position.side" = "On side";
+"position.stomach" = "On stomach";
+"position.unknown" = "Unknown";
+
+/* Hallucination types */
+"hallucination.visual" = "Visual";
+"hallucination.auditory" = "Auditory";
+"hallucination.tactile" = "Tactile";
+"hallucination.presence" = "Presence";
+"hallucination.other" = "Other";
+
+/* Triggers */
+"trigger.stress" = "Stress";
+"trigger.sleep_deprivation" = "Sleep deprivation";
+"trigger.jetlag" = "Jet lag";
+"trigger.late_screen" = "Late screen";
+"trigger.alcohol" = "Alcohol";
+"trigger.caffeine" = "Caffeine";
+"trigger.nap" = "Nap";
+"trigger.irregular_schedule" = "Irregular schedule";
+"trigger.other" = "Other";
+
+/* Stats */
+"stats.empty.title" = "No data yet";
+"stats.empty.description" = "Statistics will appear after your first episode.";
+"stats.total" = "Total";
+"stats.avg_stress" = "Avg stress";
+"stats.with_hallucination" = "With hallucination";
+"stats.episodes_per_month" = "Episodes per month (last 12)";
+"stats.hallucination_types" = "Hallucination types";
+"stats.triggers" = "Triggers";
+"stats.stress_over_time" = "Stress over time";
+"stats.calendar" = "Calendar";
+
+/* Menu bar */
+"menubar.title" = "Sleep paralysis";
+"menubar.this_month" = "this month";
+"menubar.total" = "total";
+"menubar.avg_stress" = "avg stress";
+"menubar.last_episode" = "Last episode";
+"menubar.new_episode" = "New episode";
+"menubar.open_journal" = "Open journal";
+"menubar.launch_at_login" = "Launch at login";
+"menubar.quit" = "Quit";
+
+"journal.export_pdf" = "Export to PDF";
+
+/* Charts */
+"chart.month" = "Month";
+"chart.count" = "Count";
+"chart.date" = "Date";
+"chart.stress" = "Stress";
+
+/* Calendar tooltip */
+"calendar.tooltip.episodes" = "%d episode(s) — Max stress: %d";
+"calendar.tooltip.hallucination" = " — Hallucination";
+
+/* Menu bar */
+"menubar.stress" = "Stress: %d";

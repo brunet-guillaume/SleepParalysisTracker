@@ -1,0 +1,35 @@
+name: SleepParalysisTracker
+options:
+  bundleIdPrefix: com.uotiug
+  deploymentTarget:
+    macOS: "15.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+schemes:
+  SleepParalysisTracker:
+    build:
+      targets:
+        SleepParalysisTracker: all
+    run:
+      config: Debug
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+
+targets:
+  SleepParalysisTracker:
+    type: application
+    platform: macOS
+    sources:
+      - path: SleepParalysisTracker
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.uotiug.SleepParalysisTracker
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_ENTITLEMENTS: SleepParalysisTracker.entitlements
+        PRODUCT_NAME: Sleep Paralysis Tracker
+    resources:
+      - path: Assets.xcassets

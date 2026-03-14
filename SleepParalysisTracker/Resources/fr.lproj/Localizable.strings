@@ -1,0 +1,98 @@
+/* Tabs */
+"tab.journal" = "Journal";
+"tab.stats" = "Statistiques";
+
+/* Journal */
+"journal.empty.title" = "Aucun épisode";
+"journal.empty.description" = "Appuie sur + pour enregistrer ton premier épisode.";
+"journal.add" = "Ajouter";
+"journal.edit" = "Éditer";
+"journal.delete" = "Supprimer";
+"journal.no_hallucination" = "Pas d'hallucination";
+"journal.filter" = "Filtrer";
+"journal.filter.with_hallucination" = "Avec hallucination";
+"journal.filter.without_hallucination" = "Sans hallucination";
+"journal.filter.position" = "Position";
+"journal.filter.trigger" = "Déclencheur";
+"journal.filter.reset" = "Réinitialiser les filtres";
+"journal.filter.no_results" = "Aucun résultat";
+"journal.filter.no_results_description" = "Aucun épisode ne correspond aux filtres.";
+
+/* Form */
+"form.when" = "Quand ?";
+"form.date" = "Date et heure";
+"form.stress" = "Niveau de stress";
+"form.stress.low" = "Faible";
+"form.stress.moderate" = "Modéré";
+"form.stress.high" = "Élevé";
+"form.stress.very_high" = "Très élevé";
+"form.position" = "Position de sommeil";
+"form.hallucination" = "Hallucination";
+"form.hallucination.present" = "Hallucination présente";
+"form.triggers" = "Déclencheurs possibles";
+"form.notes" = "Notes";
+"form.cancel" = "Annuler";
+"form.save" = "Enregistrer";
+"form.update" = "Modifier";
+
+/* Sleep positions */
+"position.back" = "Sur le dos";
+"position.side" = "Sur le côté";
+"position.stomach" = "Sur le ventre";
+"position.unknown" = "Inconnu";
+
+/* Hallucination types */
+"hallucination.visual" = "Visuelle";
+"hallucination.auditory" = "Auditive";
+"hallucination.tactile" = "Tactile";
+"hallucination.presence" = "Présence";
+"hallucination.other" = "Autre";
+
+/* Triggers */
+"trigger.stress" = "Stress";
+"trigger.sleep_deprivation" = "Manque de sommeil";
+"trigger.jetlag" = "Décalage horaire";
+"trigger.late_screen" = "Écran tard";
+"trigger.alcohol" = "Alcool";
+"trigger.caffeine" = "Caféine";
+"trigger.nap" = "Sieste";
+"trigger.irregular_schedule" = "Horaires irréguliers";
+"trigger.other" = "Autre";
+
+/* Stats */
+"stats.empty.title" = "Pas encore de données";
+"stats.empty.description" = "Les statistiques apparaîtront après ton premier épisode.";
+"stats.total" = "Total";
+"stats.avg_stress" = "Stress moyen";
+"stats.with_hallucination" = "Avec hallucination";
+"stats.episodes_per_month" = "Épisodes par mois (12 derniers)";
+"stats.hallucination_types" = "Types d'hallucination";
+"stats.triggers" = "Déclencheurs";
+"stats.stress_over_time" = "Évolution du stress";
+"stats.calendar" = "Calendrier";
+
+/* Menu bar */
+"menubar.title" = "Paralysies du sommeil";
+"menubar.this_month" = "ce mois";
+"menubar.total" = "total";
+"menubar.avg_stress" = "stress moy.";
+"menubar.last_episode" = "Dernier épisode";
+"menubar.new_episode" = "Nouvel épisode";
+"menubar.open_journal" = "Ouvrir le journal";
+"menubar.launch_at_login" = "Lancer au démarrage";
+"menubar.quit" = "Quitter";
+
+"journal.export_pdf" = "Exporter en PDF";
+
+/* Charts */
+"chart.month" = "Mois";
+"chart.count" = "Nombre";
+"chart.date" = "Date";
+"chart.stress" = "Stress";
+
+/* Calendar tooltip */
+"calendar.tooltip.episodes" = "%d épisode(s) — Stress max: %d";
+"calendar.tooltip.hallucination" = " — Hallucination";
+
+/* Menu bar */
+"menubar.stress" = "Stress: %d";
