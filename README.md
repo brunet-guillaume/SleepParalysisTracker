@@ -18,7 +18,7 @@
 
 **App overview:**
 
-[https://github.com/user-attachments/assets/74307659-63fc-4a40-aa12-bb5092e46727](https://github.com/user-attachments/assets/c9d9fffb-95b9-4061-ad62-de698405f359)
+https://github.com/user-attachments/assets/1ddce695-ca47-4034-aa1f-f8937be90fb1
 
 **Menu bar:**
 
